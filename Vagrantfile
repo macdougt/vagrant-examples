@@ -80,6 +80,7 @@ Vagrant.configure(2) do |config|
   # SHELL
   
   config.vm.provision "file", source: ".bashrc", destination: "~/.bashrc"
+  config.vm.provision "file", source: ".bash_aliases", destination: "~/.bash_aliases"
   config.vm.provision "file", source: ".vimrc", destination: "~/.vimrc"
   config.vm.provision "shell", path: "setup.bash"
 end
